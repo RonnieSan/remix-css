@@ -1,0 +1,116 @@
+// ----------------------------------------------------------------------
+// RESPONSIVE STYLING
+// ----------------------------------------------------------------------
+
+/*
+USAGE:
+.tablet({
+	.some-class {
+		max-width: 80%;
+	}
+});
+
+.mobile({
+	.some-class {
+		max-width: 90%;
+	}
+})
+
+Rules can be nested too!
+*/
+
+// FULL WIDTH RULES
+// Anything larger than the desktop threshold
+.full(@rules) {
+	@media screen and (min-width: @full-window-min) {
+		@rules();
+	}
+}
+
+// DESKTOP RULES
+// Anything smaller than the desktop threshold
+.desktop-down(@rules) {
+	@media screen and (max-width: @desktop-window-max) {
+		@rules();
+	}
+}
+
+// Anything above the desktop threshold
+.desktop-up(@rules) {
+	@media screen and (min-width: @desktop-window-min) {
+		@rules();
+	}
+}
+
+// Anything larger than the tablet threshold but smaller than the desktop threshold
+.desktop(@rules) {
+	@media screen and (min-width: @desktop-window-min) and (max-width: @desktop-window-max) {
+		@rules();
+	}
+}
+
+// LAPTOP RULES
+// Anything smaller than the laptop threshold
+.laptop-down(@rules) {
+	@media screen and (max-width: @laptop-window-max) {
+		@rules();
+	}
+}
+
+// Anything above the laptop threshold
+.laptop-up(@rules) {
+	@media screen and (min-width: @laptop-window-min) {
+		@rules();
+	}
+}
+
+// Anything larger than the tablet threshold but smaller than the laptop threshold
+.laptop(@rules) {
+	@media screen and (min-width: @laptop-window-min) and (max-width: @laptop-window-max) {
+		@rules();
+	}
+}
+
+// TABLET RULES
+// Anything smaller than the tablet threshold
+.tablet-down(@rules) {
+	@media screen and (max-width: @tablet-window-max) {
+		@rules();
+	}
+}
+
+// Anything above the tablet threshold
+.tablet-up(@rules) {
+	@media screen and (min-width: @tablet-window-min) {
+		@rules();
+	}
+}
+
+// Anything larger than the mobile threshold but smaller than the tablet threshold
+.tablet(@rules) {
+	@media screen and (min-width: @tablet-window-min) and (max-width: @tablet-window-max) {
+		@rules();
+	}
+}
+
+// MOBILE RULES
+// Anything smaller than the mobile threshold
+.mobile(@rules) {
+	@media screen and (max-width: @mobile-window-max) {
+		@rules();
+	}
+}
+
+// SCREEN RULES
+.screen(@rules) {
+	@media screen {
+		@rules();
+	}
+}
+
+// PRINT RULES
+.print(@rules) {
+	@media print {
+		@rules();
+	}
+}

@@ -1,0 +1,1045 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backg",
+				"background-clip\tproperty"
+			],
+			[
+				"snap",
+				"snap_sizes"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"list-sty",
+				"list-style-type\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"backgroun",
+				"background-color\tproperty"
+			],
+			[
+				"font-si",
+				"smaller-font-size"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"view",
+				"viewport_width"
+			],
+			[
+				"Edit",
+				"EditFileModal"
+			],
+			[
+				"sele",
+				"selected_file"
+			],
+			[
+				"existing",
+				"existing_file"
+			],
+			[
+				"sleected",
+				"selected_files"
+			],
+			[
+				"slected",
+				"selected_files"
+			],
+			[
+				"selected",
+				"selected_files"
+			],
+			[
+				"cancel",
+				"cancel_tokens"
+			],
+			[
+				"curren",
+				"current_path"
+			],
+			[
+				"curr",
+				"current_path"
+			],
+			[
+				"toggleSelect",
+				"toggleSelectFile"
+			],
+			[
+				"folder",
+				"folder_name"
+			],
+			[
+				"add",
+				"addToSelection"
+			],
+			[
+				"goTo",
+				"goToFolder"
+			],
+			[
+				"current",
+				"current_folder"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"allowed",
+				"allowed_types"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"get",
+				"getContentTypes"
+			],
+			[
+				"schema",
+				"schema_properties"
+			],
+			[
+				"schem",
+				"schema_properties"
+			],
+			[
+				"normali",
+				"normalized_data"
+			],
+			[
+				"truevalue",
+				"trueValue"
+			],
+			[
+				"enable_",
+				"enable_site_routes"
+			],
+			[
+				"content_Type",
+				"content_types"
+			],
+			[
+				"content_type",
+				"content_type_id"
+			],
+			[
+				"primary",
+				"primary_key"
+			],
+			[
+				"confirm",
+				"confirmDeleteContentType"
+			],
+			[
+				"possible",
+				"possible_values"
+			],
+			[
+				"defu",
+				"default_query_params"
+			],
+			[
+				"control",
+				"control_type"
+			],
+			[
+				"upper",
+				"upper_alpha"
+			],
+			[
+				"lower",
+				"lower_alpha"
+			],
+			[
+				"primary_key",
+				"primary_key_mask"
+			],
+			[
+				"Auth",
+				"AuthError"
+			],
+			[
+				"dyanmos",
+				"dynamos"
+			],
+			[
+				"reference_table",
+				"reference_table_options"
+			],
+			[
+				"referen",
+				"reference_table_options"
+			],
+			[
+				"possibl",
+				"possible_values"
+			],
+			[
+				"shca",
+				"schema_property"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"draggabl",
+				"draggable_options"
+			],
+			[
+				"content",
+				"content_type"
+			],
+			[
+				"con",
+				"control"
+			],
+			[
+				"refer",
+				"reference_label"
+			],
+			[
+				"reference",
+				"reference_table"
+			],
+			[
+				"default",
+				"default_value"
+			],
+			[
+				"default_",
+				"default_query_params"
+			],
+			[
+				"content_ty",
+				"content_type_id"
+			],
+			[
+				"overflow",
+				"overflow-x"
+			],
+			[
+				"overlfow",
+				"overflow-x"
+			],
+			[
+				"dashboard",
+				"dashboard_routes"
+			],
+			[
+				"currency",
+				"currency_field"
+			],
+			[
+				"expanded",
+				"expanded_menus"
+			],
+			[
+				"expand",
+				"expandSubMenu"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"domain",
+				"DomainStore"
+			],
+			[
+				"dashb",
+				"dashboard_routes"
+			],
+			[
+				"Dashbaord",
+				"Dashboard"
+			],
+			[
+				"webpack",
+				"webpack_config"
+			],
+			[
+				"vendor",
+				"vendor_bundle"
+			],
+			[
+				"compon",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"componen",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"compone",
+				"componentDidMount\t Life Cycle"
+			],
+			[
+				"coponent",
+				"componentDidMount\t Life Cycle"
+			],
+			[
+				"autheni",
+				"authenticated"
+			],
+			[
+				"Child",
+				"Children.only()\tReact"
+			],
+			[
+				"component",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"compome",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"compoentn",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"compo",
+				"componentDidMount\t Life Cycle"
+			],
+			[
+				"response",
+				"response_message"
+			],
+			[
+				"tab",
+				"tabindex\tAttr"
+			],
+			[
+				"ReactCSS",
+				"ReactCSSTransitionGroup"
+			],
+			[
+				"Prop",
+				"React.PropTypes.string"
+			],
+			[
+				"output",
+				"output_scrollable_height"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"onCLick",
+				"onClick"
+			],
+			[
+				"Re",
+				"React.PropTypes.arrayOf"
+			],
+			[
+				"React",
+				"React.PropTypes.string"
+			],
+			[
+				"obje",
+				"PropTypes.object"
+			],
+			[
+				"submit",
+				"submitHandler"
+			],
+			[
+				"a",
+				"React.PropTypes.arrayOf"
+			],
+			[
+				"val",
+				"validator"
+			],
+			[
+				"will",
+				"componentWillReceiveProps\t Life Cycle"
+			],
+			[
+				"componentDid",
+				"componentDidMount\t Life Cycle"
+			],
+			[
+				"masked",
+				"masked_value"
+			],
+			[
+				"componentWill",
+				"componentWillMount\t Life Cycle"
+			],
+			[
+				"cursor",
+				"cursor_position"
+			],
+			[
+				"raw",
+				"raw_value"
+			],
+			[
+				"starting",
+				"starting_index"
+			],
+			[
+				"reversed",
+				"reversed_index"
+			],
+			[
+				"log",
+				"console.log"
+			],
+			[
+				"masked_",
+				"masked_selection_end"
+			],
+			[
+				"process",
+				"processRawCharacter"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"ob",
+				"PropTypes.object"
+			],
+			[
+				"is",
+				"isRequired"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"list-styl",
+				"list-style-type"
+			],
+			[
+				"re",
+				"re\tRequire"
+			],
+			[
+				"user_perm",
+				"user_permissions"
+			],
+			[
+				"user",
+				"user_permissions"
+			],
+			[
+				"maxAge",
+				"max_age"
+			],
+			[
+				"Content",
+				"content_type"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"table",
+				"tables_created"
+			],
+			[
+				"fall",
+				"fallback_value"
+			],
+			[
+				"toggle",
+				"toggle-size"
+			],
+			[
+				"checkbox",
+				"checkbox-size"
+			],
+			[
+				"check",
+				"checkbox-size"
+			],
+			[
+				"font-size",
+				"font-size-normal"
+			],
+			[
+				"Player",
+				"player"
+			],
+			[
+				"play",
+				"player_achievement"
+			],
+			[
+				"player",
+				"player_achievement"
+			],
+			[
+				"Achievement",
+				"AchievementEngine"
+			],
+			[
+				"achiev",
+				"Achievement"
+			],
+			[
+				"Achievem",
+				"AchievementService"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"form",
+				"JSFMT: Format the current file"
+			],
+			[
+				"Snippet: sec",
+				"Snippet: Commented Section"
+			],
+			[
+				"remov\t",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"eslin",
+				"ESLint"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"mark",
+				"Markdown HTML Preview"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"lin",
+				"ESLint"
+			],
+			[
+				"Snippet: compo",
+				"Snippet: React Component"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"Snippet: comp",
+				"Snippet: React Component"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"markdown",
+				"Markdown HTML Preview"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS (<? ?>)"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"lint thi",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"messy",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"messy ",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"hint",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"rem\t",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: des",
+				"Snippet: Describe"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"Snippet: sch",
+				"Snippet: Schema"
+			],
+			[
+				"Snippet: sch\t",
+				"Snippet: Schema"
+			],
+			[
+				"Snippet: sc",
+				"Snippet: Schema"
+			],
+			[
+				"Snippet: Sche",
+				"Snippet: Schema"
+			],
+			[
+				"Snippet: Sch",
+				"Snippet: Schema"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Promise"
+			],
+			[
+				"linter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"markd",
+				"Markdown HTML Preview"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pool",
+				"Snippet: Plugin - Reboot Tooltips"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"inst\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 473.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/RonnieSan/Sites/starter-styles"
+	],
+	"file_history":
+	[
+		"/Users/RonnieSan/Sites/default-ui/src/less/forms.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/layout.less",
+		"/Users/RonnieSan/Sites/default-ui/js/SnapResponsive.js",
+		"/Users/RonnieSan/Sites/default-ui/index.js",
+		"/Users/RonnieSan/Sites/default-ui/package.json",
+		"/Users/RonnieSan/Sites/default-ui/webpack.config.js",
+		"/Users/RonnieSan/Sites/default-ui/less/theme.less",
+		"/Users/RonnieSan/Sites/default-ui/src/js/SnapResponsive.js",
+		"/Users/RonnieSan/Sites/default-ui/src/js/index.js",
+		"/Users/RonnieSan/Sites/default-ui/src/preview.html",
+		"/Users/RonnieSan/Sites/default-ui/src/less/text.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/theme.less",
+		"/Users/RonnieSan/Sites/default-ui/README.md",
+		"/Users/RonnieSan/Sites/default-ui/src/index.js",
+		"/Users/RonnieSan/Sites/default-ui/src/less/styles.less",
+		"/Users/RonnieSan/Sites/default-ui/dist/index.js",
+		"/Users/RonnieSan/Sites/default-ui/dist/index",
+		"/Users/RonnieSan/Sites/default-ui/src/less/colors.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/_theme.less",
+		"/Users/RonnieSan/Sites/default-ui/preview.html",
+		"/Users/RonnieSan/Sites/default-ui/src/less/reset.less",
+		"/Users/RonnieSan/Sites/default-ui/node_modules/less/test/css/globalVars/simple.css",
+		"/Users/RonnieSan/Sites/default-ui/src/less/tables.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/modifiers.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/tooltips.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/.theme.less",
+		"/Users/RonnieSan/Sites/default-ui/src/less/responsive.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/webpack.development.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/FileManager.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/File/Uploader.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/dynamos/delete-folder.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/File.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Dashboard/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/config/development.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/api/routes/file.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/PreviewModal.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/.gitignore",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/schemas/Files.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/filters/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/api/routes/services.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/theme/forms.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Utils/parseBuffer.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/Storage.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/API/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/reboot/forms.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Dynamos/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Utils/parseBinary.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/dynamos/delete-file.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/State/UI.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Content/List/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/reboot/forms-extended.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/theme/theme.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Middleware/auth.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/api/routes/auth.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/Router/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Private.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Auth/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Auth/Login/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/services/Users/getForAuth.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/Service.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/FolderList.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Content/Edit/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/ContentTypes/List/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/admin.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/docker-compose.yml",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/Dockerfile",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/.dockerignore",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/Template.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/normalize.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/dynamos/create-folder.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Middleware/debugger.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/seed/content_types.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/Router/routes/file.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Files/NewFolderModal.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/config/production.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/server.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/seed/dynamos.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/seed/folders.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Middleware/dynamos.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/schemas/Folders.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/schemas/Dynamos.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/install.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/services/readme.md",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/services/Folders/after_delete.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/postinstall.sh",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/services/Folders/after_get.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/services/Folders.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Utils/generateId.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Middleware/query-parser.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Cache/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/seed/remix_folders.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/theme/modals.less",
+		"/Users/RonnieSan/Library/Application Support/Sublime Text 3/Packages/User/Snippets/Vue Template.sublime-snippet",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/api/routes/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/.editorconfig",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/package.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/ContentTypes/Edit/SchemaPropertyModal.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/template-helpers/titleCase.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/template-helpers/maskedString.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/template-helpers/formatDateTime.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Utils/lib/template-helpers/lowerCase.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Toolbar.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/Sidebar.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/index.html",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/ContentTypes/Edit/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/schemas/Content_Types.js",
+		"/etc/hosts",
+		"/Users/RonnieSan/.zshrc",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/Router/routes/content.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Utils/jsonParse.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/lib/Utils/cleanObject.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/theme/type.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/site.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/webpack.production.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/components/ContentTypes/ContentTypeList/Page.vue",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/node_modules/moment-timezone/package.json",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/node_modules/moment/CHANGELOG.md",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/node_modules/moment/min/moment-with-locales.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/node_modules/moment/src/lib/locale/locale.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/api/routes/content-types.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/site/routes/index.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/site/routes/pages.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/Middleware/view.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/lib/DB/schemas/API_Keys.js",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/reboot/mixins.less",
+		"/Users/RonnieSan/Sites/Remix/Project_Vue/admin/src/styles/theme/transitions.less"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 68.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 156.0
+	},
+	"output.exec":
+	{
+		"height": 305.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Starter Styles.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/RonnieSan/Sites/RonnieSan/Websites/RonnieSan.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 297.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

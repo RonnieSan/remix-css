@@ -1,0 +1,289 @@
+// ----------------------------------------------------------------------
+// FORM STYLES
+// ----------------------------------------------------------------------
+
+form {
+	position: relative;
+	width: 100%;
+}
+
+fieldset {
+	border: 1px solid @gray-15;
+	padding: 1em;
+
+	legend {
+		background-color: transparent;
+	}
+}
+
+.control-group {
+	margin-bottom: 1em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	.control-label {
+		font-size: @font-size-small;
+		line-height: 1.5em;
+	}
+
+	.controls {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: -0.3125em;
+
+		&.pull-right {
+			justify-content: flex-end;
+		}
+
+		&.stacked {
+			flex-direction: column;
+
+			&.tight > .field {
+				margin: 0 0.3125em;
+			}
+		}
+	}
+
+	.field {
+		flex: 1 0 0;
+		margin: 0.3125em;
+
+		&.fit {
+			flex: 0 0 auto;
+		}
+
+		&.xs { max-width: 80px; }
+		&.s  { max-width: 160px; }
+		&.m  { max-width: 320px; }
+		&.l  { max-width: 640px; }
+		&.xl { max-width: 960px; }
+	}
+}
+
+input,
+select,
+textarea,
+button {
+	&:focus {
+		box-shadow: 0;
+		outline: 0;
+	}
+}
+
+.input-wrapper,
+.select-wrapper,
+.textarea-wrapper {
+	border: @control-border-stroke solid @control-border-color;
+	border-radius: @control-radius;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.input-wrapper {
+	display: inline-flex;
+
+	.helper {
+		background-color: fade(@black, 10%);
+		line-height: calc(@control-height - (@control-border-stroke * 2));
+		min-width: @control-height;
+		padding: 0 1em;
+	}
+}
+
+// Text Inputs
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='email'] {
+	background-color: @control-bkg-color;
+	border: 0;
+	flex: 1 0 0;
+	font-size: @font-size-default;
+	height: calc(@control-height - (@control-border-stroke * 2));
+	padding: 0 @control-padding;
+	width: 100%;
+}
+
+input[type='number'] {
+	appearance: none;
+	font-family: @mono-font;
+	text-align: right;
+
+	&::-webkit-inner-spin-button, 
+	&::-webkit-outer-spin-button { 
+		appearance: none;
+		margin: 0;
+	}
+}
+
+// Textarea
+textarea {
+	background-color: @control-bkg-color;
+	border: 0;
+	font-size: @font-size-default;
+	line-height: 1.5em;
+	min-height: calc((@control-height * 3) - (@control-border-stroke * 2));
+	padding: (@control-padding * 0.75) @control-padding;
+	vertical-align: middle;
+	width: 100%;
+}
+
+// Selects
+.select-wrapper {
+	align-items: center;
+	display: inline-flex;
+
+	select {
+		appearance: none;
+		background-color: @control-bkg-color;
+		border: 0;
+		flex: 1 0 0;
+		font-size: @font-size-default;
+		height: calc(@control-height - (@control-border-stroke * 2));
+		margin: 0 @control-padding;
+	}
+
+	&::after {
+		border-left: 1px solid fade(@control-border-color, 50%);
+		content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 11 12 15 16 11" /></svg>');
+		flex: 0 0 calc(@control-height - (@control-border-stroke * 2));
+		height: calc(@control-height - (@control-border-stroke * 2));
+		line-height: calc(@control-height - (@control-border-stroke * 2));
+		text-align: center;
+		width: calc(@control-height - (@control-border-stroke * 2));
+	}
+}
+
+// Radios and Checkboxes
+.radio-wrapper,
+.checkbox-wrapper {
+	align-items: center;
+	cursor: pointer;
+	display: inline-flex;
+	padding: calc(@control-height * 0.2) 0;
+	position: relative;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	appearance: none;
+	border: @control-border-stroke solid @control-border-color;
+	font-size: @font-size-default;
+	height: calc(@control-height * 0.6);
+	margin: 0 0.5em 0 0;
+	padding: 0;
+	transition: border 100ms ease-out;
+	vertical-align: middle;
+	width: calc(@control-height * 0.6);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+
+	&:focus {
+		box-shadow: 0 0 0 3px fade(@black, 10%);
+	}
+}
+
+input[type='radio'] {
+	border-radius: 50%;
+
+	&:checked {
+		border: calc(@control-height * 0.2) solid @control-color;
+	}
+}
+
+.checkbox-wrapper::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 12 10 16 18 8" /></svg>');
+	font-size: @font-size-default;
+	height: calc(@control-height * 0.6);
+	left: 0;
+	position: absolute;
+	top: calc(@control-height * 0.2);
+	width: calc(@control-height * 0.6);
+	z-index: 10;
+}
+
+input[type='checkbox'] {
+	border-radius: @control-radius;
+	position: relative;
+
+	&:checked {
+		border: calc(@control-height * 0.3) solid @control-color;
+	}
+}
+
+// Buttons
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button {
+	appearance: none;
+	background-color: @primary-color;
+	border: 0;
+	border-radius: @control-radius;
+	color: @white;
+	cursor: pointer;
+	font-size: @font-size-default;
+	height: @control-height;
+	margin: 0;
+	padding: 0 1em;
+
+	&:hover {
+		background-color: lighten(@primary-color, 15%);
+	}
+
+	&:active {
+		background-color: darken(@primary-color, 5%);
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 3px fade(@black, 10%);
+	}
+}
+
+button {
+	align-items: center;
+	display: flex;
+	padding: 0;
+
+	.label {
+		padding: 0 1em;
+	}
+
+	.icon {
+		background-color: fade(@black, 10%);
+		height: @control-height;
+		line-height: @control-height;
+		text-align: center;
+		width: @control-height;
+	}
+}
+
+// Focus
+.control-group:focus-within {
+	.input-wrapper,
+	.select-wrapper,
+	.textarea-wrapper {
+		box-shadow: 0 0 0 3px fade(@black, 10%);
+	}
+}
+
+// Validation
+.validation-error {
+	color: @red;
+	font-size: @font-size-small;
+	line-height: @line-height;
+}
+
+.invalid {
+	.input-wrapper,
+	.textarea-wrapper,
+	.select-wrapper {
+		border-color: @control-invalid-border-color;
+	}
+}

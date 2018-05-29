@@ -1,0 +1,45 @@
+// ----------------------------------------------------------------------
+// MODIFIER STYLES
+// Apply to elements to override default styling
+// ----------------------------------------------------------------------
+
+// Remove the border
+.borderless {
+	border: 0 !important;
+}
+
+// Clearfix
+.clearfix {
+	&::after {
+		clear: both;
+		content: " ";
+		display: block;
+		font-size: 0;
+		height: 0;
+		visibility: hidden;
+	}
+}
+
+// Fill the relative parent
+.cover {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+// Remove an element
+.remove {
+	display: none;
+}
+
+// Hide an object
+.hidden {
+	visibility: hidden;
+}
+
+// Make an object invisible
+.invisible {
+	opacity: 0;
+}

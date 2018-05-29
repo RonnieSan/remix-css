@@ -1,0 +1,119 @@
+// ----------------------------------------------------------------------
+// TABLE STYLES
+// ----------------------------------------------------------------------
+
+.table-wrapper {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+}
+
+// Table reset
+table {
+	background-color: @table-bkg-color;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+
+	> caption {
+		font-size: @table-font-size;
+		min-height: @table-cell-height;
+		padding: @table-cell-padding;
+		vertical-align: middle;
+	}
+ 
+	> thead > tr > th,
+	> tbody > tr > td {
+		min-height: @table-cell-height;
+		padding: @table-cell-padding;
+		vertical-align: top;
+
+		&.left {
+			text-align: left;
+		}
+
+		&.center {
+			text-align: center;
+		}
+
+		&.right {
+			text-align: right;
+		}
+
+		&.xs { width: 80px; }
+		&.s  { width: 160px; }
+		&.m  { width: 320px; }
+		&.l  { width: 640px; }
+		&.xl { width: 960px; }
+	}
+ 
+	> thead > tr > th {
+		background-color: @table-head-bkg-color;
+		color: @table-head-text-color;
+		font-size: @table-font-size;
+		font-weight: bold;
+	}
+ 
+	> tbody > tr {
+		> td {
+			font-size: @table-font-size;
+
+			// Table cells that have inputs as content
+			&.no-padding {
+				padding: 0;
+			}
+		}
+
+		&:hover > td {
+			background-color: @table-row-hover-color !important;
+		}
+	}
+
+	tr, td {
+		border-collapse: collapse;
+		line-height: @line-height;
+
+		&.center {
+			text-align: center !important;
+		}
+		&.right {
+			text-align: right !important;
+		}
+		&.number {
+			font-family: @mono-font !important;
+			text-align: right;
+		}
+
+		&.raw {
+			padding: 0;
+
+			.nested {
+				border-top: 1px dotted @table-body-border-color;
+				padding: @table-cell-padding;
+
+				&:first-child {
+					border-top: none;
+				}
+			}
+		}
+	}
+}
+ 
+// Striping
+table.striped > tbody > tr:nth-child(2n-1) > td {
+	background-color: @table-row-alt-color;
+}
+
+// Bordered
+table.bordered {
+	border: 1px solid @table-body-border-color;
+
+	> thead > tr > th {
+		border: 1px solid @table-head-border-color;
+	}
+ 
+	> tbody > tr > td {
+		border-collapse: collapse;
+		border: 1px solid @table-body-border-color;
+	}
+}

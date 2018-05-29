@@ -1,0 +1,124 @@
+// ----------------------------------------------------------------------
+// COLOR MODIFIERS
+// ----------------------------------------------------------------------
+
+// Change background color
+.bkg-color-primary {
+	background-color: @primary-color !important;
+}
+.bkg-color-secondary {
+	background-color: @secondary-color !important;
+}
+.bkg-color-accent {
+	background-color: @accent-color !important;
+}
+.bkg-color-navy {
+	background-color: @navy !important;
+}
+.bkg-color-blue {
+	background-color: @blue !important;
+}
+.bkg-color-teal {
+	background-color: @teal !important;
+}
+.bkg-color-green {
+	background-color: @green !important;
+}
+.bkg-color-yellow {
+	background-color: @yellow !important;
+}
+.bkg-color-orange {
+	background-color: @orange !important;
+}
+.bkg-color-red {
+	background-color: @red !important;
+}
+.bkg-color-magenta {
+	background-color: @magenta !important;
+}
+.bkg-color-purple {
+	background-color: @purple !important;
+}
+
+// ARBITRARY BKG COLOR
+.bkg-color(@color) {
+	background-color: @color !important;
+
+	// For buttons
+	input[type='submit']&,
+	input[type='reset']&,
+	input[type='button']&,
+	button& {
+		background-color: @color !important;
+	}
+	
+	input[type='submit']&:hover,
+	input[type='reset']&:hover,
+	input[type='button']&:hover,
+	button&:hover {
+		background-color: lighten(@color, 15%) !important;
+	}
+
+	input[type='submit']&:active,
+	input[type='reset']&:active,
+	input[type='button']&:active,
+	button&:active {
+		background-color: darken(@color, 5%) !important;
+	}
+}
+
+// Change text color
+.text-color-primary {
+	color: @primary-color !important;
+}
+.text-color-secondary {
+	color: @secondary-color !important;
+}
+.text-color-accent {
+	color: @accent-color !important;
+}
+.text-color-navy {
+	color: @navy !important;
+}
+.text-color-blue {
+	color: @blue !important;
+}
+.text-color-teal {
+	color: @teal !important;
+}
+.text-color-green {
+	color: @green !important;
+}
+.text-color-yellow {
+	color: @yellow !important;
+}
+.text-color-orange {
+	color: @orange !important;
+}
+.text-color-red {
+	color: @red !important;
+}
+.text-color-magenta {
+	color: @magenta !important;
+}
+.text-color-purple {
+	color: @purple !important;
+}
+
+// ARBITRARY TEXT COLOR
+.text-color(@color) {
+	color: @color !important;
+
+	// For links
+	a& {
+		color: @color !important;
+	}
+	
+	a&:hover {
+		color: lighten(@color, 15%) !important;
+	}
+
+	a&:active {
+		color: darken(@color, 5%) !important;
+	}
+}
