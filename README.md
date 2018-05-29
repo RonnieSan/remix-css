@@ -1,6 +1,7 @@
-Remix CSS
+# Remix CSS
 
 ## About Remix CSS
+Remix CSS is a themable CSS starter kit. It resets default browser styles and add simple, yet desirable styling to standard HTML elements. Remix CSS also includes a basic flexbox-based grid system and responsive styling.
 
 ## Requirements
 Using this package has the following requirements:
