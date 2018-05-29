@@ -2,6 +2,6 @@
 // PACKAGE EXPORTS
 // ----------------------------------------------------------------------
 
-// Import scripts
+// Import Snap Responsiveness
 import SnapResponsive from './SnapResponsive.js';
 export SnapResponsive;

@@ -67,6 +67,8 @@ export const SnapResponsive = {
 	// Initialize snap responsiveness
 	init(snap_sizes) {
 		if (window.self === window.top) {
+			require('./Resize');
+
 			// Set snap sizes from passed in array
 			if (snap_sizes) {
 				this.snap_sizes = snap_sizes;
