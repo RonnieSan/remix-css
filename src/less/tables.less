@@ -24,6 +24,7 @@ table {
  
 	> thead > tr > th,
 	> tbody > tr > td {
+		line-height: @line-height;
 		min-height: @table-cell-height;
 		padding: @table-cell-padding;
 		vertical-align: top;
@@ -71,7 +72,6 @@ table {
 
 	tr, td {
 		border-collapse: collapse;
-		line-height: @line-height;
 
 		&.center {
 			text-align: center !important;
