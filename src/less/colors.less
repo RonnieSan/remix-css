@@ -2,44 +2,6 @@
 // COLOR MODIFIERS
 // ----------------------------------------------------------------------
 
-// Change background color
-.bkg-color-primary {
-	background-color: @primary-color !important;
-}
-.bkg-color-secondary {
-	background-color: @secondary-color !important;
-}
-.bkg-color-accent {
-	background-color: @accent-color !important;
-}
-.bkg-color-navy {
-	background-color: @navy !important;
-}
-.bkg-color-blue {
-	background-color: @blue !important;
-}
-.bkg-color-teal {
-	background-color: @teal !important;
-}
-.bkg-color-green {
-	background-color: @green !important;
-}
-.bkg-color-yellow {
-	background-color: @yellow !important;
-}
-.bkg-color-orange {
-	background-color: @orange !important;
-}
-.bkg-color-red {
-	background-color: @red !important;
-}
-.bkg-color-magenta {
-	background-color: @magenta !important;
-}
-.bkg-color-purple {
-	background-color: @purple !important;
-}
-
 // ARBITRARY BKG COLOR
 .bkg-color(@color) {
 	background-color: @color !important;
@@ -67,42 +29,45 @@
 	}
 }
 
-// Change text color
-.text-color-primary {
-	color: @primary-color !important;
+// Change background color
+.bkg-color-primary {
+	.bkg-color(@primary-color);
 }
-.text-color-secondary {
-	color: @secondary-color !important;
+.bkg-color-secondary {
+	.bkg-color(@secondary-color);
 }
-.text-color-accent {
-	color: @accent-color !important;
+.bkg-color-accent {
+	.bkg-color(@accent-color);
 }
-.text-color-navy {
-	color: @navy !important;
+.bkg-color-navy {
+	.bkg-color(@navy);
 }
-.text-color-blue {
-	color: @blue !important;
+.bkg-color-blue {
+	.bkg-color(@blue);
 }
-.text-color-teal {
-	color: @teal !important;
+.bkg-color-teal {
+	.bkg-color(@teal);
 }
-.text-color-green {
-	color: @green !important;
+.bkg-color-green {
+	.bkg-color(@green);
 }
-.text-color-yellow {
-	color: @yellow !important;
+.bkg-color-yellow {
+	.bkg-color(@yellow);
 }
-.text-color-orange {
-	color: @orange !important;
+.bkg-color-orange {
+	.bkg-color(@orange);
 }
-.text-color-red {
-	color: @red !important;
+.bkg-color-red {
+	.bkg-color(@red);
 }
-.text-color-magenta {
-	color: @magenta !important;
+.bkg-color-brown {
+	.bkg-color(@brown);
 }
-.text-color-purple {
-	color: @purple !important;
+.bkg-color-magenta {
+	.bkg-color(@magenta);
+}
+.bkg-color-purple {
+	.bkg-color(@purple);
 }
 
 // ARBITRARY TEXT COLOR
@@ -121,4 +86,45 @@
 	a&:active {
 		color: darken(@color, 5%) !important;
 	}
+}
+
+// Change text color
+.text-color-primary {
+	.text-color(@primary-color);
+}
+.text-color-secondary {
+	.text-color(@secondary-color);
+}
+.text-color-accent {
+	.text-color(@accent-color);
+}
+.text-color-navy {
+	.text-color(@navy);
+}
+.text-color-blue {
+	.text-color(@blue);
+}
+.text-color-teal {
+	.text-color(@teal);
+}
+.text-color-green {
+	.text-color(@green);
+}
+.text-color-yellow {
+	.text-color(@yellow);
+}
+.text-color-orange {
+	.text-color(@orange);
+}
+.text-color-red {
+	.text-color(@red);
+}
+.text-color-brown {
+	.text-color(@brown);
+}
+.text-color-magenta {
+	.text-color(@magenta);
+}
+.text-color-purple {
+	.text-color(@purple);
 }
