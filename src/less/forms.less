@@ -89,9 +89,9 @@ button {
 
 	.helper {
 		background-color: fade(@black, 10%);
+		flex: 0 0 auto;
 		line-height: calc(@control-height - (@control-border-stroke * 2));
-		min-width: @control-height;
-		padding: 0 1em;
+		height: calc(@control-height - (@control-border-stroke * 2));
 	}
 }
 
@@ -120,6 +120,11 @@ input[type='number'] {
 		appearance: none;
 		margin: 0;
 	}
+}
+
+input[disabled='disabled'] {
+	background-color: @gray-10;
+	color: @gray-35;
 }
 
 // Textarea
