@@ -32,7 +32,7 @@ fieldset {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: -0.3125em;
+		margin: -@control-gutter;
 
 		&.pull-right {
 			justify-content: flex-end;
@@ -42,7 +42,7 @@ fieldset {
 			flex-direction: column;
 
 			&.tight > .field {
-				margin: 0 0.3125em;
+				margin: 0 @control-gutter;
 			}
 		}
 	}
@@ -261,6 +261,7 @@ button {
 	padding: 0;
 
 	.label {
+		font-family: @body-font;
 		padding: 0 1em;
 	}
 
