@@ -3,16 +3,16 @@
 // Apply to elements to override default styling
 // ----------------------------------------------------------------------
 
-// Remove the border
+// REMOVE THE BORDER
 .borderless {
 	border: 0 !important;
 }
 
-// Clearfix
+// CLEARFIX
 .clearfix {
 	&::after {
 		clear: both;
-		content: " ";
+		content: ' ';
 		display: block;
 		font-size: 0;
 		height: 0;
@@ -20,7 +20,7 @@
 	}
 }
 
-// Fill the relative parent
+// FILL THE RELATIVE PARENT
 .cover {
 	bottom: 0;
 	left: 0;
@@ -29,22 +29,43 @@
 	top: 0;
 }
 
+// DISPLAY ELEMENTS
 // Remove an element
 .remove {
 	display: none;
 }
-
 // Hide an object
 .hidden {
 	visibility: hidden;
 }
-
 // Make an object invisible
 .invisible {
 	opacity: 0;
 }
+// Display only on full
+.show-full {
+	.desktop-down({display: none;});
+}
+// Display only on desktop
+.show-desktop {
+	.full({display: none;});
+	.laptop-down({display: none;});
+}
+// Display only on laptop
+.show-laptop {
+	.desktop-up({display: none;});
+	.tablet-down({display: none;});
+}
+// Display only on tablet
+.show-tablet {
+	.laptop-up({display: none;});
+	.mobile({display: none;});
+}
+.show-mobile {
+	.tablet-up({display: none;});
+}
 
-// Justification
+// JUSTIFICATION
 .justify-left {
 	text-align: left !important;
 }
