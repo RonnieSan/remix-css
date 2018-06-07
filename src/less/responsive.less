@@ -114,3 +114,43 @@ Rules can be nested too!
 		@rules();
 	}
 }
+
+// Show and hide for responsive
+// Display only or hide on full
+.show-full {
+	.desktop-down({display: none;});
+}
+.hide-full {
+	.full({display: none;});
+}
+// Display only or hide on desktop
+.show-desktop {
+	.full({display: none;});
+	.laptop-down({display: none;});
+}
+.hide-desktop {
+	.desktop({display: none;});
+}
+// Display only or hide on laptop
+.show-laptop {
+	.desktop-up({display: none;});
+	.tablet-down({display: none;});
+}
+.hide-laptop {
+	.laptop({display: none;});
+}
+// Display only or hide on tablet
+.show-tablet {
+	.laptop-up({display: none;});
+	.mobile({display: none;});
+}
+.hide-tablet {
+	.tablet({display: none;});
+}
+// Display or hide on mobile
+.show-mobile {
+	.tablet-up({display: none;});
+}
+.hide-mobile {
+	.mobile({display: none;});
+}
