@@ -32,7 +32,7 @@ fieldset {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		margin: -0.3125em;
+		margin: -@control-gutter;
 
 		&.pull-right {
 			justify-content: flex-end;
@@ -42,14 +42,14 @@ fieldset {
 			flex-direction: column;
 
 			&.tight > .field {
-				margin: 0 0.3125em;
+				margin: 0 @control-gutter;
 			}
 		}
 	}
 
 	.field {
 		flex: 1 0 0;
-		margin: 0.3125em;
+		margin: @control-gutter;
 
 		&.fit {
 			flex: 0 0 auto;
@@ -119,6 +119,7 @@ input[type='number'] {
 
 	&::-webkit-inner-spin-button, 
 	&::-webkit-outer-spin-button { 
+		-webkit-appearance: none;
 		appearance: none;
 		margin: 0;
 	}
@@ -175,6 +176,8 @@ textarea {
 	display: inline-flex;
 	padding: calc(@control-height * 0.2) 0;
 	position: relative;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 input[type='radio'],
@@ -189,8 +192,6 @@ input[type='checkbox'] {
 	transition: border 100ms ease-out;
 	vertical-align: middle;
 	width: calc(@control-height * 0.6);
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-tap-highlight-color: transparent;
 
 	&:focus {
 		box-shadow: 0 0 0 3px fade(@black, 10%);
@@ -243,7 +244,7 @@ button {
 	padding: 0 1em;
 
 	&:hover {
-		background-color: lighten(@primary-color, 15%);
+		background-color: lighten(@primary-color, 5%);
 	}
 
 	&:active {
@@ -261,6 +262,7 @@ button {
 	padding: 0;
 
 	.label {
+		font-family: @body-font;
 		padding: 0 1em;
 	}
 

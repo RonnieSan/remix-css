@@ -18,7 +18,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-
+	line-height: 1.25em;
 }
 
 h1 {
@@ -43,6 +43,18 @@ h4 {
 	font-size: @font-size-h4;
 	margin: 1em 0 0.5rem;
 }
+
+.mobile({
+	h1 {
+		font-size: @font-size-h1 * 0.75;
+	}
+	h2 {
+		font-size: @font-size-h2 * 0.75;
+	}
+	h3 {
+		font-size: @font-size-h3 * 0.875;
+	}
+});
 
 hr {
 	border: 0;
