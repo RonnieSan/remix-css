@@ -4,4 +4,6 @@
 
 // Import Snap Responsiveness
 import { SnapResponsive } from './SnapResponsive.js';
-export SnapResponsive;
+export {
+	SnapResponsive
+};

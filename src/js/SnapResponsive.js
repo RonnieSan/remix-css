@@ -2,7 +2,7 @@
 // SNAP RESPONSIVE
 // ----------------------------------------------------------------------
 
-const SnapResponsive = {
+export default {
 
 	snap_sizes : [
 		// Desktop Screens (HD)
@@ -80,8 +80,4 @@ const SnapResponsive = {
 			window.addEventListener('orientationchange', this.setViewport(this.snap_sizes));
 		}
 	}
-};
-
-export {
-	SnapResponsive
 };
