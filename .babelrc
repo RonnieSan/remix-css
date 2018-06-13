@@ -1,5 +1,13 @@
 {
 	"presets" : [
 		"env"
+	],
+	"plugins" : [
+		["prismjs", {
+			"languages": ["javascript", "less", "css", "bash", "html"],
+			"plugins": ["line-numbers"],
+			"theme": "twilight",
+			"css": true
+		}]
 	]
 }

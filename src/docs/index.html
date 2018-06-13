@@ -39,6 +39,19 @@
 							<a name="installation"></a>
 							<h3>Installation</h3>
 							<p>Install Remix CSS via NPM.</p>
+							<pre><code class="language-bash">$ npm install --save-dev remix-css</code></pre>
+							<p><br />Create an aias to the theme file in your webpack config.</p>
+							<pre><code class="language-javascript">{
+  resolve : {
+    alias : {
+      'theme' : path.resolve(__dirname, 'node_modules/remix-css/src/default.theme.less')
+    }
+  }
+}</code></pre>
+							<p><br />Create a new LessCSS stylesheet and import the Remix styles into it.</p>
+							<pre><code class="language-less">@import "~theme";</code></pre>
+
+							<p class="note">By default, the webpack resolver is used. If you are using the <code>paths</code> option with <code>less-loader</code>, the </p>
 
 							<h3>Theming</h3>
 						</div>
@@ -52,5 +65,5 @@
 			</div>
 		</section>
 	</div>
-<script type="text/javascript" src="/main.min.js"></script></body>
+</body>
 </html>

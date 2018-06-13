@@ -11,12 +11,12 @@
 
 // Full
 @full-window-min: 1921px;
-@full-width: 100%;
+@full-width: 1200px;
 
 // Desktop
 @desktop-window-max: 1920px;
 @desktop-window-min: 1680px;
-@desktop-width: 1600px;
+@desktop-width: 1200px;
 
 // Laptop
 @laptop-window-max: 1679px;
@@ -146,11 +146,11 @@
 // TEXT ELEMENTS
 
 // Import fonts
-@import (css) 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,700';
+@import (css) 'https://fonts.googleapis.com/css?family=Montserrat:800|Roboto+Mono:400,700|Roboto:400,700';
 
 // Font stacks
 @body-font: 'Roboto', Arial, Helvetica, Sans-serif;
-@heading-font: 'Roboto', Arial, Helvetica, Sans-serif;
+@heading-font: 'Montserrat', Arial, Helvetica, Sans-serif;
 @serif-font: Georgia, Cambria, 'Times New Roman', Serif;
 @mono-font: 'Roboto Mono', Menlo, Courier, System;
 
@@ -218,9 +218,37 @@
 // STYLES
 
 // Import the default stylesheets here
-@import './src/less/styles.less';
+@import '../less/styles.less';
+#wrapper {
+	padding: 50px 0 0;
+}
 
-// IMPORT OTHER THEME-SPECIFIC STYLESHEETS HERE
+#header {
+	flex: 0 0 auto;
+	margin-bottom: 2em;
+}
+
+#menu {
+	position: sticky;
+	top: 30px;
+
+	li {
+		margin: 0.625em 0;
+	}
+}
+
+#main {
+	min-height: 300vh;
+}
+
+#footer {
+	flex: 0 0 80px;
+	line-height: 80px;
+
+	.container {
+		border-top: 1px solid @gray-10;
+	}
+}
 
 // END STYLES
 // ----------------------------------------------------------------------

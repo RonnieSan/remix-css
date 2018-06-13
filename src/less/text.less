@@ -17,10 +17,6 @@ p {
 	}
 }
 
-h1, h2, h3, h4 {
-	line-height: 1.25em;
-}
-
 h1 {
 	font-family: @heading-font;
 	font-size: @font-size-h1;
@@ -55,6 +51,14 @@ h4 {
 		font-size: @font-size-h3 * 0.875;
 	}
 });
+
+h1, h2, h3, h4 {
+	line-height: 1.25em;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
 
 hr {
 	border: 0;
@@ -95,6 +99,7 @@ abbr {
 
 a {
 	color: @primary-color;
+	cursor: pointer;
 	text-decoration: none;
 
 	&:hover {
@@ -207,6 +212,7 @@ pre {
 	code {
 		display: block;
 		line-height: @line-height;
+		overflow-x: auto;
 		padding: 1em;
 	}
 }
