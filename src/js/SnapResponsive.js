@@ -10,7 +10,7 @@ export default {
 			threshold : Infinity,
 			width     : 1920
 		},
-		
+
 		// Smaller Desktop Screens (1280x800)
 		{
 			threshold : 1680,
@@ -40,8 +40,11 @@ export default {
 			// Get the screen width based on the orientation of the device
 			// let landscape = (Math.abs(window.orientation) === 90 || window.orientation === 270) || false;
 
-			// Use the window width by default
-			let screen_width = window.innerWidth * (window.devicePixelRatio || 1);
+			// Use the screen width by default
+			let screen_width = window.screen.width;
+			if (window.outerWidth < screen_width) {
+				screen_width = window.outerWidth;
+			}
 
 			// Iterate through snap_sizes to get the right one
 			var viewport_width = 'device-width';
