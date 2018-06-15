@@ -41,15 +41,7 @@ export default {
 			// let landscape = (Math.abs(window.orientation) === 90 || window.orientation === 270) || false;
 
 			// Use the window width by default
-			let screen_width = window.innerWidth;
-
-			// On a portable device, use the screen width/height
-			if (screen.orientation !== undefined) {
-				screen_width = window.screen.width;
-				if (/^landscape/.test(screen.orientation.type)) {
-					screen_width = screen_width * 2;
-				}
-			}
+			let screen_width = window.innerWidth * (window.devicePixelRatio || 1);
 
 			// Iterate through snap_sizes to get the right one
 			var viewport_width = 'device-width';
@@ -61,13 +53,12 @@ export default {
 
 			// Set the viewport width
 			document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + viewport_width);
-		}
+		};
 	},
 
 	// Initialize snap responsiveness
 	init(snap_sizes) {
 		if (window.self === window.top) {
-			require('./Resize');
 
 			// Set snap sizes from passed in array
 			if (snap_sizes) {
