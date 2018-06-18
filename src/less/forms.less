@@ -233,7 +233,7 @@ input[type='reset'],
 input[type='button'],
 button {
 	appearance: none;
-	background-color: @primary-color;
+	background-color: @color-primary;
 	border: 0;
 	border-radius: @control-radius;
 	color: @white;
@@ -244,11 +244,11 @@ button {
 	padding: 0 1em;
 
 	&:hover {
-		background-color: lighten(@primary-color, 5%);
+		background-color: lighten(@color-primary, 5%);
 	}
 
 	&:active {
-		background-color: darken(@primary-color, 5%);
+		background-color: darken(@color-primary, 5%);
 	}
 
 	&:focus {
