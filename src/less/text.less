@@ -9,6 +9,7 @@ body {
 }
 
 p {
+	color: @text-color;
 	line-height: @line-height;
 	margin-bottom: 1em;
 
@@ -53,6 +54,7 @@ h4 {
 });
 
 h1, h2, h3, h4 {
+	color: @text-color;
 	line-height: 1.25em;
 
 	&:first-child {
@@ -98,16 +100,16 @@ abbr {
 // LINKS
 
 a {
-	color: @primary-color;
+	color: @color-primary;
 	cursor: pointer;
 	text-decoration: none;
 
 	&:hover {
-		border-bottom: 1px dashed @primary-color;
+		border-bottom: 1px dashed @color-primary;
 	}
 
 	&:active {
-		color: darken(@primary-color, 5%) !important;
+		color: darken(@color-primary, 5%) !important;
 	}
 }
 

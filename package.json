@@ -1,12 +1,10 @@
 {
   "name": "remix-css",
-  "version": "0.1.13",
+  "version": "1.0.0",
   "description": "Themable CSS styling for websites and web applications",
   "main": "src/js/index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "dev:docs": "webpack-dev-server --config src/docs/webpack.config.js --open",
-    "build:docs": "webpack --config src/docs/webpack.config.js --production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "RonnieSan",
