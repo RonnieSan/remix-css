@@ -104,8 +104,11 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		border-bottom: 1px dashed @color-primary;
+		box-shadow: none;
+		outline: none;
 	}
 
 	&:active {
