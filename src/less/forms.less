@@ -150,16 +150,23 @@ textarea {
 // Selects
 .select-wrapper {
 	align-items: center;
-	display: inline-flex;
+	background-color: @control-bkg-color;
+	height: calc(@control-height - (@control-border-stroke * 2));
+	position: relative;
 
 	select {
 		appearance: none;
-		background-color: @control-bkg-color;
+		background-color: transparent;
 		border: 0;
 		flex: 1 0 0;
 		font-size: @font-size;
 		height: calc(@control-height - (@control-border-stroke * 2));
+		left: 0;
 		margin: 0 @control-padding;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
 	}
 
 	&::after {
@@ -168,8 +175,12 @@ textarea {
 		flex: 0 0 calc(@control-height - (@control-border-stroke * 2));
 		height: calc(@control-height - (@control-border-stroke * 2));
 		line-height: calc(@control-height - (@control-border-stroke * 2));
+		position: absolute;
+		right: 0;
 		text-align: center;
+		top: 0;
 		width: calc(@control-height - (@control-border-stroke * 2));
+		z-index: 0;
 	}
 }
 
