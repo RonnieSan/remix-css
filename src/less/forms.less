@@ -292,10 +292,10 @@ button {
 }
 
 // Focus
-.control-group:focus-within {
-	.input-wrapper,
-	.select-wrapper,
-	.textarea-wrapper {
+.control-group {
+	.input-wrapper:focus-within,
+	.select-wrapper:focus-within,
+	.textarea-wrapper:focus-within {
 		@control-focus();
 	}
 }
