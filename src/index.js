@@ -4,6 +4,6 @@
 
 // Import assets
 import '../default.theme.less';
-import { SnapResponsive } from './js/SnapResponsive';
+import SnapResponsive from './js/SnapResponsive';
 
 SnapResponsive.init();
