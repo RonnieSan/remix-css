@@ -37,13 +37,16 @@ export default {
 			// Put smaller sizes first so they iterate in correct order
 			let snap_sizes = this.snap_sizes;
 
-			// Get the screen width based on the orientation of the device
-			// let landscape = (Math.abs(window.orientation) === 90 || window.orientation === 270) || false;
-
 			// Use the screen width by default
 			let screen_width = window.screen.width;
 			if (window.outerWidth < screen_width) {
 				screen_width = window.outerWidth;
+			}
+
+			// Get the screen width based on the orientation of the device
+			let landscape = (Math.abs(window.orientation) === 90 || window.orientation === 270) || false;
+			if (landscape) {
+				screen_width = screen_width * 1.5;
 			}
 
 			// Iterate through snap_sizes to get the right one
