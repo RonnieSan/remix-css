@@ -5,10 +5,16 @@
 export default {
 
 	snap_sizes : [
-		// Desktop Screens (HD)
+		// Large Screens (UHD)
 		{
 			threshold : Infinity,
-			width     : 1920
+			width     : 'device-width'
+		},
+
+		// Desktop Screens (HD)
+		{
+			threshold : 1920,
+			width: 1680
 		},
 
 		// Smaller Desktop Screens (1280x800)
@@ -19,13 +25,13 @@ export default {
 
 		// Tablet Screens (800x600)
 		{
-			threshold : 1279,
+			threshold : 1280,
 			width     : 768
 		},
 
 		// Mobile Screens
 		{
-			threshold : 767,
+			threshold : 768,
 			width     : 360
 		}
 	],
@@ -45,7 +51,7 @@ export default {
 
 			// Get the screen width based on the orientation of the device
 			let landscape = (Math.abs(window.orientation) === 90 || window.orientation === 270) || false;
-			if (landscape) {
+			if (landscape * (screen_width < 1280)) {
 				screen_width = screen_width * 1.5;
 			}
 
