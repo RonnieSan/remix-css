@@ -10,6 +10,8 @@
 }
 
 .viewport {
+	display: flex;
+	flex-flow: column nowrap;
 	height: 100vh;
 	weight: 100vw;
 }
@@ -39,27 +41,27 @@
 	@gutter: @gutter-size/2;
 	margin: -@gutter 0;
 
-	.row {
+	> .row {
 		margin: 0 -@gutter;
-	}
 
-	.column {
-		margin: @gutter;
+		> .column {
+			margin: @gutter;
 
-		&.span-2 {
-			flex: 2 0 @gutter-size;
-		}
+			&.span-2 {
+				flex: 2 0 @gutter-size;
+			}
 
-		&.span-3 {
-			flex: 3 0 (@gutter-size * 2);
-		}
+			&.span-3 {
+				flex: 3 0 (@gutter-size * 2);
+			}
 
-		&.span-4 {
-			flex: 4 0 (@gutter-size * 3);
-		}
+			&.span-4 {
+				flex: 4 0 (@gutter-size * 3);
+			}
 
-		&.span-5 {
-			flex: 5 0 (@gutter-size * 4);
+			&.span-5 {
+				flex: 5 0 (@gutter-size * 4);
+			}
 		}
 	}
 }
@@ -86,6 +88,10 @@
 
 	&.fit {
 		flex: 0 0 auto;
+	}
+
+	&.distribute {
+		flex: 1 0 auto;
 	}
 }
 
@@ -152,6 +158,18 @@
 		justify-content: flex-end;
 	}
 
+	&.around {
+		justify-content: space-around;
+	}
+
+	&.even {
+		justify-content: space-evenly;
+	}
+
+	&.between {
+		justify-content: space-between;
+	}
+
 	> * {
 		flex: 1 0 0;
 	}
@@ -175,12 +193,34 @@
 	> .fit {
 		flex: 0 0 auto;
 	}
+
+	> .distribute {
+		flex: 1 0 auto;
+	}
 }
 
 .flex-v {
 	align-items: stretch;
 	display: flex;
 	flex-direction: column;
+
+	&.fill {
+		flex: 1 0 auto;
+		height: 100%;
+	}
+
+	&.center {
+		align-items: stretch;
+		justify-content: center;
+	}
+	
+	&.h-center {
+		align-items: stretch;
+	}
+
+	&.v-center {
+		justify-content: center;
+	}
 
 	> * {
 		flex: 1 0 auto;
@@ -195,6 +235,10 @@
 	.row,
 	.flex-h {
 		flex-direction: column;
+
+		.spacer.h {
+			display: none;
+		}		
 	}
 
 	.column {

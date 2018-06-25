@@ -16,6 +16,11 @@ p {
 	&.lead {
 		font-size: 1.25em;
 	}
+
+	&:last-child,
+	&.last {
+		margin-bottom: 0;
+	}
 }
 
 h1 {
@@ -128,7 +133,7 @@ blockquote {
 	font-size: @font-size-large;
 	font-style: italic;
 	line-height: @line-height;
-	margin-left: 2em;
+	padding-left: 2em;
 }
 
 // END BLOCK QUOTES
