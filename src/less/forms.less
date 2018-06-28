@@ -40,9 +40,13 @@ fieldset {
 
 		&.stacked {
 			flex-direction: column;
+		}
 
-			&.no-gutter > .field {
-				margin: 0 @control-gutter;
+		&.no-gutter {
+			margin: 0;
+
+			> .field {
+				margin: 0;
 			}
 		}
 	}
