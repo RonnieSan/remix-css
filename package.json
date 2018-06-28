@@ -1,6 +1,6 @@
 {
   "name": "remix-css",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Themable CSS styling for websites and web applications",
   "main": "src/js/index.js",
   "scripts": {
