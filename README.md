@@ -17,7 +17,7 @@ Using this package has the following requirements:
 	$ npm install --save-dev remix-css
 	```
 
-2. Import the ResponsiveStyles script into your weboack entry file and init it.
+2. Import the ResponsiveStyles script into your webpack entry file and init it.
 	```js
 	import { SnapResponsive } from 'remix-css';
 	SnapResponsive.init();
