@@ -62,7 +62,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bdfc1eb225e65aec01aa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2bb20d0493ef2f92923b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -829,7 +829,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../default.theme.less */ \"./default.theme.less\");\n\nvar _SnapResponsive = __webpack_require__(/*! ./js/SnapResponsive */ \"./src/js/SnapResponsive.js\");\n\nvar _SnapResponsive2 = _interopRequireDefault(_SnapResponsive);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// ----------------------------------------------------------------------\n// REMIX CSS - PREVIEW SCRIPT\n// ----------------------------------------------------------------------\n\n// Import assets\n_SnapResponsive2.default.init();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.SnapResponsive = undefined;\n\n__webpack_require__(/*! ../default.theme.less */ \"./default.theme.less\");\n\nvar _SnapResponsive = __webpack_require__(/*! ./js/SnapResponsive */ \"./src/js/SnapResponsive.js\");\n\nvar _SnapResponsive2 = _interopRequireDefault(_SnapResponsive);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// ----------------------------------------------------------------------\n// REMIX CSS - PREVIEW SCRIPT\n// ----------------------------------------------------------------------\n\n// Import assets\nexports.SnapResponsive = _SnapResponsive2.default;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
