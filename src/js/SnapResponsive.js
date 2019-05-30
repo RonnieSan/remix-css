@@ -38,7 +38,7 @@ export default {
 
 	// Change the viewport to match the snap size
 	setViewport(snap_sizes) {
-		return () => {
+		return function() {
 			// Anything under the threshold will snap to the width
 			// Put smaller sizes first so they iterate in correct order
 			let snap_sizes = this.snap_sizes;
