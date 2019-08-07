@@ -44,8 +44,12 @@
 	> .row {
 		margin: 0 -@gutter;
 
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		> .column {
-			margin: @gutter;
+			margin: 0 @gutter @gutter-size;
 
 			&.span-2 {
 				flex: 2 0 @gutter-size;
@@ -62,13 +66,49 @@
 			&.span-5 {
 				flex: 5 0 (@gutter-size * 4);
 			}
+
+			&.span-6 {
+				flex: 6 0 (@gutter-size * 5);
+			}
+
+			&.span-7 {
+				flex: 7 0 (@gutter-size * 6);
+			}
+
+			&.span-8 {
+				flex: 8 0 (@gutter-size * 7);
+			}
+
+			&.span-9 {
+				flex: 9 0 (@gutter-size * 8);
+			}
+
+			&.span-10 {
+				flex: 10 0 (@gutter-size * 9);
+			}
+
+			&.span-11 {
+				flex: 11 0 (@gutter-size * 10);
+			}
 		}
+
+		.mobile({
+			margin: 0 0 @gutter-size;
+
+			> .column {
+				margin: 0 0 @gutter-size;
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		});
 	}
 }
 
 .column {
 	flex: 1 0 0;
-	min-width: 320px;
 
 	&.no-min {
 		min-width: 0;
@@ -194,6 +234,30 @@
 		flex: 5 0 0;
 	}
 
+	> .span-6 {
+		flex: 6 0 0;
+	}
+
+	> .span-7 {
+		flex: 7 0 0;
+	}
+
+	> .span-8 {
+		flex: 8 0 0;
+	}
+
+	> .span-9 {
+		flex: 9 0 0;
+	}
+
+	> .span-10 {
+		flex: 10 0 0;
+	}
+
+	> .span-11 {
+		flex: 11 0 0;
+	}
+
 	> .fit {
 		flex: 0 0 auto;
 	}
@@ -252,6 +316,12 @@
 		&.span-3,
 		&.span-4,
 		&.span-5,
+		&.span-6,
+		&.span-7,
+		&.span-8,
+		&.span-9,
+		&.span-10,
+		&.span-11,
 		&.fit {
 			flex: 0 0 auto;
 		}

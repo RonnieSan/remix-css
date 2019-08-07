@@ -16,8 +16,11 @@ module.exports = {
 	output : {
 		filename : 'index.js',
 		path : path.resolve(__dirname, 'dist'),
-		publicPath : '/'
+		publicPath : '/',
+		library : 'RemixCSS',
+		libraryTarget : 'umd'
 	},
+	target : 'web',
 	module : {
 		rules : [
 			{

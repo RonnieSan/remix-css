@@ -4,14 +4,14 @@
 
 .table-wrapper {
 	overflow-x: auto;
-	overflow-y: hidden;
+	overflow-y: visible;
 	position: relative;
 }
 
 // Table reset
 table {
 	background-color: @table-bkg-color;
-	border-collapse: collapse;
+	border-collapse: separate;
 	border-spacing: 0;
 	width: 100%;
 
@@ -104,16 +104,49 @@ table.striped > tbody > tr:nth-child(2n-1) > td {
 	background-color: @table-row-alt-color;
 }
 
+// Rounding
+table.rounded {
+	> thead > tr:first-child {
+		> th:first-child {
+			border-radius: @table-radius 0 0 0;
+		}
+		> th:last-child {
+			border-radius: 0 @table-radius 0 0;
+		}
+	}
+
+	> tbody > tr:last-child {
+		> td:first-child {
+			border-radius: 0 0 0 @table-radius;
+		}
+		> td:last-child {
+			border-radius: 0 0 @table-radius 0;
+		}
+	}
+}
+
 // Bordered
 table.bordered {
-	border: 1px solid @table-body-border-color;
-
 	> thead > tr > th {
-		border: 1px solid @table-head-border-color;
+		border: @table-border-stroke solid @table-head-border-color;
+		border-left: 0;
+
+		&:first-child {
+			border-left: @table-border-stroke solid @table-head-border-color;
+		}
+	}
+
+	> thead.borderless > tr > th {
+		border: 0;
 	}
  
 	> tbody > tr > td {
-		border-collapse: collapse;
-		border: 1px solid @table-body-border-color;
+		border: @table-border-stroke solid @table-body-border-color;
+		border-left: 0;
+		border-top: 0;
+
+		&:first-child {
+			border-left: @table-border-stroke solid @table-body-border-color;
+		}
 	}
 }

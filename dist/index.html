@@ -11,6 +11,9 @@
 		section {
 			margin-bottom: 3em !important;
 		}
+		section:last-child {
+			margin-bottom: 0 !important;
+		}
 		#colors .column {
 			min-width: 80px;
 		}
@@ -32,6 +35,10 @@
 
 		.bkg-color-white {
 			border: 1px solid #CCC;
+		}
+
+		.spacer {
+			width: 50px;
 		}
 	</style>
 </head>
@@ -143,7 +150,7 @@
 			<div class="container">
 				<h2>Tables</h2>
 				<div class="table-wrapper">
-					<table class="striped bordered">
+					<table class="striped bordered rounded">
 						<thead>
 							<tr>
 								<th class="xs">Tiny</th>

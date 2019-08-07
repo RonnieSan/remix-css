@@ -4,45 +4,9 @@
 
 export default {
 
-	snap_sizes : [
-		// Large Screens (UHD)
-		{
-			threshold : Infinity,
-			width     : 'device-width'
-		},
-
-		// Desktop Screens (HD)
-		{
-			threshold : 1920,
-			width: 1680
-		},
-
-		// Smaller Desktop Screens (1280x800)
-		{
-			threshold : 1680,
-			width     : 1280
-		},
-
-		// Tablet Screens (800x600)
-		{
-			threshold : 1280,
-			width     : 768
-		},
-
-		// Mobile Screens
-		{
-			threshold : 768,
-			width     : 360
-		}
-	],
-
 	// Change the viewport to match the snap size
 	setViewport(snap_sizes) {
 		return function() {
-			// Anything under the threshold will snap to the width
-			// Put smaller sizes first so they iterate in correct order
-			let snap_sizes = this.snap_sizes;
-
 			// Use the screen width by default
 			let screen_width = window.screen.width;
 			if (window.outerWidth < screen_width) {
@@ -71,16 +35,46 @@ export default {
 	// Initialize snap responsiveness
 	init(snap_sizes) {
 		if (window.self === window.top) {
+			if (!snap_sizes) {
+				// Anything under the threshold will snap to the width
+				// Put smaller sizes first so they iterate in correct order
+				snap_sizes = [
+					// Large Screens (UHD)
+					{
+						threshold : Infinity,
+						width     : 'device-width'
+					},
 
-			// Set snap sizes from passed in array
-			if (snap_sizes) {
-				this.snap_sizes = snap_sizes;
+					// Desktop Screens (HD)
+					{
+						threshold : 1920,
+						width: 1680
+					},
+
+					// Smaller Desktop Screens (1280x800)
+					{
+						threshold : 1680,
+						width     : 1280
+					},
+
+					// Tablet Screens (800x600)
+					{
+						threshold : 1280,
+						width     : 768
+					},
+
+					// Mobile Screens
+					{
+						threshold : 768,
+						width     : 360
+					}
+				];
 			}
 
 			// Set the viewport on orientationChange
-			window.addEventListener('load', this.setViewport(this.snap_sizes));
-			window.addEventListener('resize', this.setViewport(this.snap_sizes));
-			window.addEventListener('orientationchange', this.setViewport(this.snap_sizes));
+			window.addEventListener('load', this.setViewport(snap_sizes));
+			window.addEventListener('resize', this.setViewport(snap_sizes));
+			window.addEventListener('orientationchange', this.setViewport(snap_sizes));
 		}
 	}
 };

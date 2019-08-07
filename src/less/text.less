@@ -175,27 +175,16 @@ ol.numbered {
 
 // Definition lists
 dl {
+	display: block;
 	line-height: @line-height;
 
 	dt {
-		clear: left;
-		float: left;
-		margin-right: 1em;
-		text-align: right;
-		width: 25%;
+		font-weight: bold;
 	}
 
 	dd {
-		clear: right;
-		float: left;
+		margin-left: 1em;
 		margin-bottom: 1em;
-		width: 70%;
-	}
-
-	&::after {
-		clear: both;
-		content: '';
-		display: table;
 	}
 }
 
@@ -218,6 +207,7 @@ code {
 
 pre {
 	font-family: @mono-font;
+	font-size: 0.875em;
 	white-space: pre;
 
 	code {
