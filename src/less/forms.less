@@ -137,7 +137,7 @@ input[type='email'] {
 	background-color: @control-bkg-color;
 	border: 0;
 	flex: 1 0 0;
-	font-size: @font-size;
+	font-size: 1em;
 	height: calc(@control-height - (@control-border-stroke * 2));
 	padding: 0 @control-padding;
 	width: 100%;
@@ -165,7 +165,7 @@ input[disabled='disabled'] {
 textarea {
 	background-color: @control-bkg-color;
 	border: 0;
-	font-size: @font-size;
+	font-size: 1em;
 	line-height: 1.5em;
 	min-height: calc((@control-height * 3) - (@control-border-stroke * 2));
 	padding: (@control-padding * 0.75) @control-padding;
@@ -185,7 +185,7 @@ textarea {
 		background-color: transparent;
 		border: 0;
 		flex: 1 0 0;
-		font-size: @font-size;
+		font-size: 1em;
 		height: calc(@control-height - (@control-border-stroke * 2));
 		left: 0;
 		padding: 0 calc(@control-height - (@control-border-stroke * 2)) 0 @control-padding;
@@ -229,7 +229,7 @@ input[type='checkbox'] {
 	background-color: @control-bkg-color;
 	border: @control-border-stroke solid @control-border-color;
 	cursor: pointer;
-	font-size: @font-size;
+	font-size: 1em;
 	height: calc(@control-height * 0.6);
 	margin: 0 0.5em 0 0;
 	padding: 0;
@@ -253,7 +253,7 @@ input[type='radio'] {
 .checkbox-wrapper::before {
 	@icon-color: replace(@control-bkg-color, '#', '%23');
 	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="@{icon-color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 12 10 16 18 8" /></svg>');
-	font-size: @font-size;
+	font-size: 1em;
 	height: calc(@control-height * 0.6);
 	left: 0;
 	position: absolute;
@@ -282,7 +282,7 @@ button {
 	border-radius: @control-radius;
 	color: @white;
 	cursor: pointer;
-	font-size: @font-size;
+	font-size: 1em;
 	height: @control-height;
 	margin: 0;
 	padding: 0 1em;

@@ -117,40 +117,50 @@ Rules can be nested too!
 
 // Show and hide for responsive
 // Display only or hide on full
-.show-full {
+.show-full,
+.full-only {
 	.desktop-down({display: none;});
 }
-.hide-full {
+.hide-full,
+.no-full {
 	.full({display: none;});
 }
 // Display only or hide on desktop
-.show-desktop {
+.show-desktop,
+.desktop-only {
 	.full({display: none;});
 	.laptop-down({display: none;});
 }
-.hide-desktop {
+.hide-desktop,
+.no-desktop {
 	.desktop({display: none;});
 }
 // Display only or hide on laptop
-.show-laptop {
+.show-laptop,
+.laptop-only {
 	.desktop-up({display: none;});
 	.tablet-down({display: none;});
 }
-.hide-laptop {
+.hide-laptop,
+.no-laptop {
 	.laptop({display: none;});
 }
 // Display only or hide on tablet
-.show-tablet {
+.show-tablet,
+.tablet-only {
 	.laptop-up({display: none;});
 	.mobile({display: none;});
 }
-.hide-tablet {
+.hide-tablet,
+.no-tablet {
 	.tablet({display: none;});
 }
 // Display or hide on mobile
-.show-mobile {
+.show-mobile,
+.mobile-only {
 	.tablet-up({display: none;});
 }
-.hide-mobile {
+.hide-mobile,
+.no-mobile {
 	.mobile({display: none;});
 }
