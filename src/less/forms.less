@@ -359,6 +359,10 @@ button {
 	input[type='password'],
 	input[type='tel'],
 	input[type='email'] {
-		flex: 1 0 auto;
+		flex: 1 0;
+	}
+
+	.input-wrapper .helper .mdi::before {
+		line-height: calc(@control-height - (@control-border-stroke * 2));
 	}
 }
