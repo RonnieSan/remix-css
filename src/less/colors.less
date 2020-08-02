@@ -18,18 +18,21 @@
 	input[type='reset']&:hover,
 	input[type='button']&:hover,
 	button&:hover {
-		background-color: lighten(@color, 5%) !important;
+		background-color: lighten(@color, 7%) !important;
 	}
 
 	input[type='submit']&:active,
 	input[type='reset']&:active,
 	input[type='button']&:active,
 	button&:active {
-		background-color: darken(@color, 5%) !important;
+		background-color: darken(@color, 7%) !important;
 	}
 }
 
 // Change background color
+.bkg-transparent {
+	.bkg-color(transparent);
+}
 .bkg-color-primary {
 	.bkg-color(@color-primary);
 }
