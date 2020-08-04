@@ -5,7 +5,7 @@
 html,
 body {
 	color: @text-color;
-	font-family: @body-font;
+	font-family: @font;
 	font-size: @font-size;
 	line-height: @line-height;
 }
@@ -24,25 +24,29 @@ p {
 }
 
 h1 {
-	font-family: @heading-font;
+	font-family: @font-alt;
 	font-size: @font-size-h1;
+	font-weight: bold;
 	margin-bottom: 1rem;
 }
 
 h2 {
-	font-family: @heading-font;
+	font-family: @font-alt;
 	font-size: @font-size-h2;
+	font-weight: bold;
 	margin: 1em 0 1rem;
 }
 
 h3 {
-	font-family: @heading-font;
+	font-family: @font-alt;
 	font-size: @font-size-h3;
+	font-weight: bold;
 	margin: 1em 0 1rem;
 }
 
 h4 {
 	font-size: @font-size-h4;
+	font-weight: bold;
 	margin: 1em 0 0.5rem;
 }
 
@@ -115,10 +119,6 @@ a {
 		box-shadow: none;
 		outline: none;
 	}
-
-	&:active {
-		color: darken(@color-primary, 10%);
-	}
 }
 
 // END LINKS
@@ -129,7 +129,7 @@ a {
 // BLOCK QUOTES
 
 blockquote {
-	font-family: @serif-font;
+	font-family: @font-serif;
 	font-size: @font-size-large;
 	font-style: italic;
 	line-height: @line-height;
@@ -200,13 +200,13 @@ code {
 	border-radius: 3px;
 	color: @gray-50;
 	display: inline-block;
-	font-family: @mono-font;
+	font-family: @font-mono;
 	font-size: @font-size-small;
 	padding: 0 0.35em;
 }
 
 pre {
-	font-family: @mono-font;
+	font-family: @font-mono;
 	font-size: 0.875em;
 	white-space: pre;
 

@@ -13,6 +13,7 @@ table {
 	background-color: @table-bkg-color;
 	border-collapse: separate;
 	border-spacing: 0;
+	table-layout: fixed;
 	width: 100%;
 
 	> caption {
@@ -66,7 +67,7 @@ table {
 		}
 
 		&:hover > td {
-			background-color: @table-row-hover-color !important;
+			background-color: @table-row-hover-color;
 		}
 	}
 
@@ -80,7 +81,7 @@ table {
 			text-align: right !important;
 		}
 		&.number {
-			font-family: @mono-font !important;
+			font-family: @font-mono !important;
 			text-align: right;
 		}
 
