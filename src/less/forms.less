@@ -319,20 +319,23 @@ button {
 	}
 }
 
-// Focus polyfill
-.input-wrapper.focus-within,
-.select-wrapper.focus-within,
-.textarea-wrapper.focus-within,
-.pillbox-wrapper.focus-within {
-	@control-focus();
-}
-
 // Focus
-.input-wrapper:focus-within,
-.select-wrapper:focus-within,
-.textarea-wrapper:focus-within,
-.pillbox-wrapper:focus-within {
-	@control-focus();
+.input-wrapper,
+.select-wrapper,
+.textarea-wrapper,
+.multi-text-wrapper,
+.multi-select-wrapper,
+.markdown-wrapper,
+.code-wrapper,
+.pillbox-wrapper {
+	&:focus-within {
+		@control-focus();
+	}
+
+	// Focus polyfill
+	&.focus-within {
+		@control-focus();
+	}
 }
 
 // Validation

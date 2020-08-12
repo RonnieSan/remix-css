@@ -5,7 +5,7 @@
 #wrapper {
 	height: 100%;
 	min-height: 100vh;
-	min-width: 100%;
+	min-width: 100vw;
 	width: 100%;
 }
 
@@ -185,12 +185,28 @@
 	}
 }
 
-.flex-h {
+.flex-h,
+.flex-row {
 	align-items: stretch;
 	display: flex;
 	flex-direction: row;
 
-	&.left {
+	&.top,
+	&.align-start {
+		align-items: flex-start;
+	}
+
+	&.bottom,
+	&.align-end {
+		align-items: flex-end;
+	}
+
+	&.middle {
+		align-items: center;
+	}
+
+	&.left,
+	&.flex-start {
 		justify-content: flex-start;
 	}
 
@@ -198,24 +214,25 @@
 		justify-content: center;
 	}
 
-	&.right {
+	&.right,
+	&.end,
+	&.flex-end {
 		justify-content: flex-end;
 	}
 
-	&.around {
+	&.around,
+	&.space-around {
 		justify-content: space-around;
 	}
 
-	&.even {
+	&.even,
+	&.space-evenly {
 		justify-content: space-evenly;
 	}
 
-	&.between {
+	&.between,
+	&.space-between {
 		justify-content: space-between;
-	}
-
-	> * {
-		flex: 1 0;
 	}
 
 	&.auto > * {
@@ -271,7 +288,8 @@
 	}
 }
 
-.flex-v {
+.flex-v,
+.flex-column {
 	align-items: stretch;
 	display: flex;
 	flex-direction: column;
@@ -281,13 +299,13 @@
 		height: 100%;
 	}
 
-	&.center {
-		align-items: stretch;
+	&.centered {
+		align-items: center;
 		justify-content: center;
 	}
 	
 	&.h-center {
-		align-items: stretch;
+		align-items: center;
 	}
 
 	&.v-center {

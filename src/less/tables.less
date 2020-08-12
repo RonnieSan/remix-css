@@ -27,8 +27,9 @@ table {
 	> tbody > tr > td {
 		line-height: @line-height;
 		min-height: @table-cell-height;
+		min-width: 80px;
 		padding: @table-cell-padding;
-		vertical-align: top;
+		vertical-align: middle;
 
 		&.left {
 			text-align: left;
@@ -42,11 +43,13 @@ table {
 			text-align: right;
 		}
 
-		&.xs { width: 80px; }
-		&.s  { width: 160px; }
-		&.m  { width: 320px; }
-		&.l  { width: 640px; }
-		&.xl { width: 960px; }
+		&.xxs { width: 12.5%; }
+		&.xs  { width: 25%; }
+		&.s   { width: 37.5%; }
+		&.m   { width: 50%; }
+		&.l   { width: 62.5%; }
+		&.xl  { width: 75%; }
+		&.xxl { width: 87.5%; }
 	}
  
 	> thead > tr > th {
@@ -69,6 +72,14 @@ table {
 		&:hover > td {
 			background-color: @table-row-hover-color;
 		}
+
+		&.top > td {
+			vertical-align: top;
+		}
+
+		&.bottom > td {
+			vertical-align: bottom;
+		}
 	}
 
 	tr, td {
@@ -85,10 +96,10 @@ table {
 			text-align: right;
 		}
 
-		&.raw {
+		&.nested {
 			padding: 0;
 
-			.nested {
+			.inner {
 				border-top: 1px dotted @table-body-border-color;
 				padding: @table-cell-padding;
 
