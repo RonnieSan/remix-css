@@ -13,21 +13,17 @@ table {
 	background-color: @table-bkg-color;
 	border-collapse: separate;
 	border-spacing: 0;
-	table-layout: fixed;
 	width: 100%;
 
 	> caption {
 		font-size: @table-font-size;
-		min-height: @table-cell-height;
 		padding: @table-cell-padding;
 		vertical-align: middle;
 	}
  
-	> thead > tr > th,
-	> tbody > tr > td {
+	th,
+	td {
 		line-height: @line-height;
-		min-height: @table-cell-height;
-		min-width: 80px;
 		padding: @table-cell-padding;
 		vertical-align: middle;
 
@@ -43,23 +39,23 @@ table {
 			text-align: right;
 		}
 
-		&.xxs { width: 12.5%; }
-		&.xs  { width: 25%; }
-		&.s   { width: 37.5%; }
-		&.m   { width: 50%; }
-		&.l   { width: 62.5%; }
-		&.xl  { width: 75%; }
-		&.xxl { width: 87.5%; }
+		&.xxs { width: 50px; }
+		&.xs  { width: 100px; }
+		&.s   { width: 150px; }
+		&.m   { width: 250px; }
+		&.l   { width: 500px; }
+		&.xl  { width: 1000px; }
+		&.xxl { width: 100%; }
 	}
  
-	> thead > tr > th {
+	th {
 		background-color: @table-head-bkg-color;
 		color: @table-head-text-color;
 		font-size: @table-font-size;
 		font-weight: bold;
 	}
  
-	> tbody > tr {
+	tr {
 		> td {
 			font-size: @table-font-size;
 
@@ -112,8 +108,13 @@ table {
 }
  
 // Striping
-table.striped > tbody > tr:nth-child(2n-1) > td {
-	background-color: @table-row-alt-color;
+table.striped tbody {
+	> tr:nth-child(2n-1) > td {
+		background-color: @table-row-alt-color;
+	}
+	> tr:nth-child(2n-1):hover > td {
+		background-color: @table-row-hover-color;
+	}
 }
 
 // Rounding

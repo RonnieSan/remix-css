@@ -12,13 +12,18 @@ fieldset {
 	padding: 1em;
 
 	legend {
+		.smaller;
 		background-color: transparent;
+		color: @gray-35;
+		font-weight: bold;
+		padding: 0 0.25em;
 	}
 }
 
 .control-group {
 	margin-bottom: 1em;
 
+	&.last,
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -34,7 +39,7 @@ fieldset {
 		flex-wrap: wrap;
 		margin: -@control-gutter;
 
-		&.pull-right {
+		&.justify-right {
 			justify-content: flex-end;
 		}
 
@@ -87,7 +92,7 @@ fieldset {
 		&.xl { max-width: 75%; }
 		&.xxl { max-width: 87.5%; }
 
-		.caption {
+		> .inline-text {
 			height: @control-height;
 			line-height: @control-height;
 		}
@@ -97,18 +102,25 @@ fieldset {
 input,
 select,
 textarea,
-button {
+button,
+.radio-group {
 	&:focus {
 		box-shadow: 0;
 		outline: 0;
 	}
 }
 
+.control {
+	background-color: @control-bkg-color;
+	border: @control-border-stroke solid @control-border-color;
+	border-radius: @control-radius;
+}
+
 .input-wrapper,
 .select-wrapper,
 .textarea-wrapper {
-	border: @control-border-stroke solid @control-border-color;
-	border-radius: @control-radius;
+	.control;
+	.focusable;
 	display: inline-block;
 	overflow: hidden;
 	vertical-align: middle;
@@ -117,15 +129,15 @@ button {
 
 .input-wrapper {
 	display: inline-flex;
+}
 
-	.helper {
-		background-color: @control-helper-bkg-color;
-		flex: 0 0 auto;
-		height: calc(@control-height - (@control-border-stroke * 2));
-		line-height: calc(@control-height - (@control-border-stroke * 2));
-		min-width: calc(@control-height - (@control-border-stroke * 2));
-		text-align: center;
-	}
+.control-helper {
+	background-color: @control-helper-bkg-color;
+	flex: 0 0 auto;
+	height: calc(@control-height - (@control-border-stroke * 2));
+	line-height: calc(@control-height - (@control-border-stroke * 2));
+	min-width: calc(@control-height - (@control-border-stroke * 2));
+	text-align: center;
 }
 
 // Text Inputs
@@ -176,7 +188,6 @@ textarea {
 // Selects
 .select-wrapper {
 	align-items: center;
-	background-color: @control-bkg-color;
 	height: @control-height;
 	position: relative;
 
@@ -223,11 +234,35 @@ textarea {
 	-webkit-tap-highlight-color: transparent;
 }
 
+.radio-group {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	&.stacked {
+		flex-flow: column nowrap;
+	}
+
+	> .option {
+		flex: 0 0 auto;
+		margin-right: 2em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width: @mobile-window-max) {
+		flex-direction: column;
+		margin-right: 0;
+	}
+}
+
 input[type='radio'],
 input[type='checkbox'] {
+	.control;
+	.focusable;
 	appearance: none;
-	background-color: @control-bkg-color;
-	border: @control-border-stroke solid @control-border-color;
 	cursor: pointer;
 	font-size: 1em;
 	height: calc(@control-height * 0.6);
@@ -276,11 +311,12 @@ input[type='submit'],
 input[type='reset'],
 input[type='button'],
 button {
+	.focusable;
 	appearance: none;
 	background-color: @color-primary;
 	border: 0;
 	border-radius: @control-radius;
-	color: @white;
+	color: @control-button-text-color;
 	cursor: pointer;
 	font-size: 1em;
 	height: @control-height;
@@ -293,10 +329,6 @@ button {
 
 	&:active {
 		background-color: darken(@color-primary, 5%);
-	}
-
-	&:focus {
-		@control-focus();
 	}
 }
 
@@ -319,22 +351,15 @@ button {
 	}
 }
 
-// Focus
-.input-wrapper,
-.select-wrapper,
-.textarea-wrapper,
-.file-wrapper,
-.multi-text-wrapper,
-.multi-select-wrapper,
-.markdown-wrapper,
-.code-wrapper,
-.pillbox-wrapper {
-	&:focus-within {
-		@control-focus();
+button.icon {
+	.icon {
+		background-color: transparent;
 	}
+}
 
-	// Focus polyfill
-	&.focus-within {
+// Focus
+.focusable {
+	&:focus-within {
 		@control-focus();
 	}
 }

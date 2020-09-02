@@ -88,7 +88,7 @@
 						<div class="column">
 							<h3>Lists</h3>
 							<h4>Bulleted Lists</h4>
-							<ul class="bulleted">
+							<ul>
 								<li>First</li>
 								<li>Second</li>
 								<li>Third</li>
@@ -100,7 +100,7 @@
 							</ul>
 
 							<h4>Numbered Lists</h4>
-							<ol class="numbered">
+							<ol>
 								<li>First</li>
 								<li>Second</li>
 								<li>Third</li>
@@ -150,30 +150,29 @@
 			<div class="container">
 				<h2>Tables</h2>
 				<div class="table-wrapper">
-					<table class="striped bordered rounded">
+					<table class="striped rounded bordered">
 						<thead>
 							<tr>
-								<th class="xs">Tiny</th>
+								<th class="xxs">XXS</th>
 								<th class="s">Small</th>
 								<th class="m">Medium</th>
 								<th class="l">Large</th>
-								<th>Normal</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>1</td>
-								<td>First and<br />Second Line</td>
+								<td class="center">1</td>
+								<td><strong>Lorem Ipsum Dolor</strong><br />
+								Sit Amet Consecteteur</td>
 								<td class="number">1,234,567</td>
-								<td>4</td>
-								<td>5</td>
+								<td>Cras mattis consectetur purus sit amet fermentum.</td>
 							</tr>
 							<tr>
-								<td>1</td>
-								<td>One line only</td>
-								<td class="number">1,234,567</td>
-								<td>4</td>
-								<td>5</td>
+								<td class="center">2</td>
+								<td><strong>Quam Tristique Ridiculus</strong><br />
+								Ornare Euismod</td>
+								<td class="number">9,876,543</td>
+								<td>Vestibulum id ligula porta felis euismod semper.</td>
 							</tr>
 						</tbody>
 					</table>
@@ -209,7 +208,7 @@
 										<div class="controls">
 											<div class="field">
 												<div class="input-wrapper">
-													<div class="helper">$</div>
+													<div class="control-helper">$</div>
 													<input type="number">
 												</div>
 											</div>
@@ -296,6 +295,11 @@
 											<div class="field fit">
 												<button type="button">
 													<span class="icon">X</span><span class="label">Actual Button</span>
+												</button>
+											</div>
+											<div class="field fit">
+												<button type="button" class="icon">
+													<span class="icon">#</span>
 												</button>
 											</div>
 										</div>

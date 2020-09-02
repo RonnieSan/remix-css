@@ -4,7 +4,7 @@
 
 html,
 body {
-	color: @text-color;
+	color: @color-text;
 	font-family: @font;
 	font-size: @font-size;
 	line-height: @line-height;
@@ -63,7 +63,7 @@ h4 {
 });
 
 h1, h2, h3, h4 {
-	color: @text-color;
+	color: @color-text;
 	line-height: 1.25em;
 
 	&:first-child {
@@ -109,13 +109,13 @@ abbr {
 // LINKS
 
 a {
-	color: @color-primary;
+	color: @color-link;
 	cursor: pointer;
 	text-decoration: none;
 
 	&:hover,
 	&:focus {
-		color: lighten(@color-primary, 10%);
+		color: @color-link-hover;
 		box-shadow: none;
 		outline: none;
 	}
@@ -143,19 +143,18 @@ blockquote {
 // ----------------------------------------------------------------------
 // LISTS
 
-// Nested lists
 ul, ol {
 	line-height: @line-height;
 }
 
+// Nested lists
 ul, ol {
 	> ul, > ol {
 		margin-left: 1.5em;
 	}
 }
 
-// Bulleted lists
-ul.bulleted {
+ul {
 	list-style: disc inside none;
 
 	> ul {
@@ -163,13 +162,23 @@ ul.bulleted {
 	}
 }
 
-// Numbered lists
-ol.numbered {
+ol {
 	list-style: decimal inside none;
 
 	> ol {
 		list-style-type: lower-alpha;
-		margin-left: 2.5em;
+		margin-left: 1.5em;
+	}
+}
+
+// Bulleted lists
+ul.none,
+ol.none {
+	list-style: none;
+
+	> ul,
+	> ol {
+		list-style-type: none;
 	}
 }
 

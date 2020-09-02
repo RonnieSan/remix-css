@@ -205,8 +205,7 @@
 		align-items: center;
 	}
 
-	&.left,
-	&.flex-start {
+	&.left {
 		justify-content: flex-start;
 	}
 
@@ -215,23 +214,19 @@
 	}
 
 	&.right,
-	&.end,
-	&.flex-end {
+	&.end {
 		justify-content: flex-end;
 	}
 
-	&.around,
-	&.space-around {
+	&.around {
 		justify-content: space-around;
 	}
 
-	&.even,
-	&.space-evenly {
+	&.even {
 		justify-content: space-evenly;
 	}
 
-	&.between,
-	&.space-between {
+	&.between {
 		justify-content: space-between;
 	}
 
@@ -239,7 +234,7 @@
 		flex: 0 1 auto;
 	}
 
-	&.distribute > * {
+	&.equal > * {
 		flex: 1 0;
 	}
 
@@ -346,12 +341,3 @@
 		}
 	}
 });
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	/* IE10+ CSS styles go here */
-	.column,
-	.flex-h,
-	.flex-row > * {
-		flex: 1 0;
-	}
-}
