@@ -110,7 +110,7 @@ button,
 	}
 }
 
-.control {
+.control-border {
 	background-color: @control-bkg-color;
 	border: @control-border-stroke solid @control-border-color;
 	border-radius: @control-radius;
@@ -119,7 +119,7 @@ button,
 .input-wrapper,
 .select-wrapper,
 .textarea-wrapper {
-	.control;
+	.control-border;
 	.focusable;
 	display: inline-block;
 	overflow: hidden;
@@ -260,7 +260,7 @@ textarea {
 
 input[type='radio'],
 input[type='checkbox'] {
-	.control;
+	.control-border;
 	.focusable;
 	appearance: none;
 	cursor: pointer;
