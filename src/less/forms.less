@@ -313,7 +313,7 @@ input[type='button'],
 button {
 	.focusable;
 	appearance: none;
-	background-color: @color-primary;
+	background-color: @control-button-color;
 	border: 0;
 	border-radius: @control-radius;
 	color: @control-button-text-color;
@@ -324,11 +324,11 @@ button {
 	padding: 0 1em;
 
 	&:hover {
-		background-color: lighten(@color-primary, 5%);
+		background-color: lighten(@control-button-color, 5%);
 	}
 
 	&:active {
-		background-color: darken(@color-primary, 5%);
+		background-color: darken(@control-button-color, 5%);
 	}
 }
 
