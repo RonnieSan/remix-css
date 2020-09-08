@@ -153,6 +153,10 @@ input[type='email'] {
 	height: calc(@control-height - (@control-border-stroke * 2));
 	padding: 0 @control-padding;
 	width: 100%;
+
+	&::placeholder {
+		color: @control-placeholder-color;
+	}
 }
 
 input[type='number'] {
@@ -281,7 +285,7 @@ input[type='radio'] {
 	border-radius: 50%;
 
 	&:checked {
-		border: calc(@control-height * 0.2) solid @control-color;
+		border: calc(@control-height * 0.2) solid @control-accent-color;
 	}
 }
 
@@ -302,7 +306,7 @@ input[type='checkbox'] {
 	position: relative;
 
 	&:checked {
-		border: calc(@control-height * 0.3) solid @control-color;
+		border: calc(@control-height * 0.3) solid @control-accent-color;
 	}
 }
 
